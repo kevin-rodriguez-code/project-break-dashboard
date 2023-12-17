@@ -83,6 +83,17 @@ body{
 .container h2{
 font-size: 30px;
 }
+#input{
+    height: 26px;
+    width: 50px;
+}
+#btn{
+    height: 30px;
+    border-radius: 12px;
+    border: 0;
+    background-color: rgb(196, 228, 37);
+    color: black;
+}
 .pass-div{
     display: flex;
     flex-direction: column;
@@ -95,7 +106,7 @@ font-size: 30px;
     justify-content: center;
     align-items: center;
     min-width:100px;
-    height: 30px;
+    height: 20px;
     background-color: rgba(245, 245, 220, 0.445);
     padding: 10px;
     border-radius: 10px;

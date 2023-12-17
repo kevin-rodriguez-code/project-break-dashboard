@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Brake - Inicio</title>
+</head>
+<body>
+    <main class="main">
+        <section class="clock">
+            <p>Son las...</p>
+            <div id ="clock"></div>
+            <div id ="date"></div>
+            <p id ="phrase"></p>
+        </section>
+        <section class="generator">
+            <h2>Genera tu contraseña segura</h2>
+            <p>Número de caracteres de la contraseña</p>
+            <div>
+                <input id="input" type="number" min="12" max="50"/>
+                <input id="btn" type="button" value="Generar contraseña"/>
+            </div>
+            <div class="pass-div">
+                <p>Contraseña Generada:</p>
+                <div id="password"></div>
+            </div>
+        </section>
+        <section class="weather">
+
+        </section>
+        <section class="links">
+
+        </section>
+    </main>
+    <footer class="bottom-page">
+        <a href="./html/clock.html"><img src="./assets/img/wall-clock.png" alt="clock icon"></a></a>
+        <a href="./html/generator.html"><img src="./assets/img/protect.png" alt=""></a>
+        <a href=""><img src="./assets/img/link.png" alt=""></a>
+        <a href=""><img src="./assets/img/cloudy.png" alt=""></a>
+    </footer>
+    <script src="../js/clock.js"></script>
+    <script src="../js/generator.js"></script>
+</body>
+</html>
