@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Brake - Tiempo</title>
+    <link href="../css/weather.css" rel="stylesheet">
 </head>
 <body>
     <header class="top-page">
-        <a  href="" class="home">INICIO</a>
+        <a  href="../index.html" class="home">INICIO</a>
     </header>
-    <main>
-        <div id="container">
+    <main class="main">
+        <div id="container-weather">
             <p id="city"></p>
             <p id="current-weather"></p>
             <div id="temperature">
-                <img src="" alt="">
+                <div id="weather-img"></div>
+                <p id="degrees"></p>
                 <div id="current-temperature">
-                    <p id="degrees1"></p>
-                    <img src="" alt="">
                     <div id="atributes">
                         <p id="rain"></p>
                         <p id="humidity"></p>
                         <p id="wind"></p>
                     </div>
                 </div>
+            </div>
+            <div id="hours">
+        
             </div>     
-            <div id="time"></div>
-            <div id="image"></div>
-            <div id="degrees2"></div>
         </div>
+        <footer class="bottom-page">
+            <a href="./clock.html"><img src="../assets/img/wall-clock.png" alt="clock icon"></a></a>
+            <a href="./generator.html"><img src="../assets/img/protect.png" alt=""></a>
+            <a href=""><img src="../assets/img/link.png" alt=""></a>
+            <a href="./weather.html"><img src="../assets/img/cloudy.png" alt=""></a>
+        </footer>
     </main>
+    <script src="../js/weather.js"></script>
 </body>
 </html>

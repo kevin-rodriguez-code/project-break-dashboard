@@ -7,6 +7,7 @@ const rain = document.getElementById("rain")
 const humidityAtt = document.getElementById("humidity")
 const wind = document.getElementById("wind")
 const hours = document.getElementById("hours")
+const weatherImg = document.getElementById("weather-img")
 
 const apiKey = "fc2c1e9414df42bbba2161442231712";
 const cityApi = "Burriana";
@@ -33,7 +34,7 @@ fetch(apiUrl)
     city.innerHTML = `${name}, ${region}, ${country}`
     currentWeather.innerHTML = `${text}`
     degrees.innerHTML = `${renamedTemperature}`
-    degrees.insertAdjacentHTML("afterbegin",`<img src="${icon}" alt=""></img>`)
+    weatherImg.innerHTML =`<img class="weather-icon" src="${icon}" alt=""></img>`
     rain.innerHTML = `Precipitaciones:${precip_in}%`
     humidityAtt.innerHTML = `Humedad: ${humidity}%`
     wind.innerHTML = `Viento: ${wind_kph} Km/h`
@@ -42,10 +43,10 @@ fetch(apiUrl)
         const { icon: iconHour } = conditionHour;
         const formattedTime = timeHour.substr(11, 5)
         
-        hours.innerHTML += `
+        hours.innerHTML += `<div class="hours-cont">
             <div>${formattedTime}</div>
             <img src="${iconHour}" alt="${iconHour}">
-            <div>Temperatura: ${renamedTemperatureHour}</div>
+            <div>${renamedTemperatureHour} ºC</div></div>
         `;
 
     }

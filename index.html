@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Brake - Inicio</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <main class="main">
         <section class="clock">
-            <p>Son las...</p>
             <div id ="clock"></div>
             <div id ="date"></div>
-            <p id ="phrase"></p>
         </section>
         <section class="generator">
             <h2>Genera tu contraseña segura</h2>
@@ -26,6 +25,24 @@
             </div>
         </section>
         <section class="weather">
+            <div id="container-weather">
+                <p id="city"></p>
+                <p id="current-weather"></p>
+                <div id="temperature">
+                    <div id="weather-img"></div>
+                    <p id="degrees"></p>
+                    <div id="current-temperature">
+                        <div id="atributes">
+                            <p id="rain"></p>
+                            <p id="humidity"></p>
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="hours">
+            
+                </div>     
+            </div>
 
         </section>
         <section class="links">
@@ -36,9 +53,10 @@
         <a href="./html/clock.html"><img src="./assets/img/wall-clock.png" alt="clock icon"></a></a>
         <a href="./html/generator.html"><img src="./assets/img/protect.png" alt=""></a>
         <a href=""><img src="./assets/img/link.png" alt=""></a>
-        <a href=""><img src="./assets/img/cloudy.png" alt=""></a>
+        <a href="./html/weather.html"><img src="./assets/img/cloudy.png" alt=""></a>
     </footer>
-    <script src="../js/clock.js"></script>
-    <script src="../js/generator.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/generator.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
 </html>

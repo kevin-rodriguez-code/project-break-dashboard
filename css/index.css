@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(../assets/img/—Pngtree—c4d\ neon\ cool\ background_1113037.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------*/
+.main{
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding-top: 100px;
+    gap: 30px;
+}
+
+#clock{
+    font-size: 60px;
+}
+#date{
+    font-size: 30px;
+}
+.generator{
+    background-color: rgb(20, 84, 49, .6);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 20px;
+        
+}
+
+.container h2{
+    font-size: 30px;
+}
+#input{
+    height: 26px;
+    width: 50px;
+}
+#btn{
+    height: 30px;
+    border-radius: 12px;
+    border: 0;
+    background-color: rgb(196, 228, 37);
+    color: black;
+}
+.pass-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:100px;
+    height: 20px;
+    background-color: rgba(245, 245, 220, 0.445);
+    padding: 10px;
+    border-radius: 10px;
+}
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+#container-weather{
+    background-color: rgb(20, 84, 49, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+   
+}
+#temperature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+}
+#degrees{
+    text-align: center;
+    font-size: 30px;
+}
+#hours{
+    display: flex;
+    width: 300px;
+    overflow-x: scroll;
+    padding: 5px;
+   
+}
+.hours-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bottom-page{
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 255, 255,.4);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    width: max-content;
+}
+
+.bottom-page img{
+    width: 40px;
+    margin: 10px ;
+   
+}
+.bottom-page :nth-child(1):hover, .bottom-page :nth-child(2):hover, .bottom-page :nth-child(3):hover, .bottom-page :nth-child(4):hover {
+    transform: scale(1.15);
+}
